@@ -5,6 +5,19 @@ React = interfaz de usuario
 Comunicación = HTTP (JSON)
 
 
+Backend
+
+    cd /Users/desarrollador/development/2026/django/django-drf-demo
+    source venv/bin/activate                                                                                                    ✔  10219  08:47:39
+    which python 
+
+frontend
+
+    cd /Users/desarrollador/development/2026/django/django-drf-demo/frontend
+    npm run dev
+
+
+
 ## Ventajas de un solo repositorio
 
 
