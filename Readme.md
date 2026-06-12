@@ -1,21 +1,14 @@
+## Proyecto
+
+Django = API REST
+React = interfaz de usuario
+Comunicación = HTTP (JSON)
+
+
 ## Ventajas de un solo repositorio
 
-Más fácil de aprender
 
-Tendrás:
 
-DRF en http://localhost:8000
-React en http://localhost:5173
-
-y podrás concentrarte en:
-
-    Fetch
-    Axios
-    JSON
-    CORS
-    Hooks (useState, useEffect)
-
-sin complicarte con varios repositorios.x
 
 Simula una arquitectura real
 
@@ -25,9 +18,13 @@ Muchos proyectos usan:
     ├── backend/
     └── frontend/
 
-aunque luego se desplieguen por separado.
+
+http://localhost:8000/api/users/
+DRF en http://localhost:8000
+React en http://localhost:5173
 
 
+Aunque luego se desplieguen por separado.
 
     django-drf-demo/
     ├── backend/
@@ -38,12 +35,86 @@ aunque luego se desplieguen por separado.
     │   └── requirements.txt
     │
     └── frontend/
-        ├── package.json
-        ├── vite.config.js
         ├── src/
-        └── node_modules/
+        ├── public/
+        ├── package.json
+        └── vite.config.js
+
+
+### FrontEnd
+
+Aprender React de la forma en que hoy se utiliza en proyectos reales (2025-2026),
 
 
 
 
-http://localhost:8000/api/users/
+Tecnologías recomendadas actualmente
+
+Para un proyecto moderno:
+
+**Base**
+
+* React 19
+* Vite
+* React Router
+* Axios
+
+**Manejo de datos**
+
+* TanStack Query (antes React Query)
+
+**Formularios**
+
+* React Hook Form
+
+**Estilos**
+
+* Bootstrap (si vienes de Django y quieres avanzar rápido)
+* o Tailwind CSS (muy demandado actualmente)
+
+**Calidad**
+
+* ESLint
+* Prettier
+
+
+### Como ya tienes el endpoint DRF funcionando, hagamos el ejemplo más simple posible primero y después lo iremos profesionalizando.
+
+1. Crear el proyecto React con Vite
+
+    # Desde la raíz del repositorio:
+    cd django-drf-demo
+    npm create vite@latest frontend -- --template react
+    # Entrar al proyecto:
+    cd frontend
+    # Instalar dependencias:
+    npm install
+    npm install axios
+
+    # Iniciar React:
+    npm run dev
+
+    # Deberías ver algo como:
+    Local: http://localhost:5173/
+
+
+
+
+
+
+
+
+
+
+
+y podrás concentrarte en:
+
+    Fetch
+    Axios
+    JSON
+    CORS
+    Hooks (useState, useEffect)
+
+sin complicarte con varios repositorios.
+
+
